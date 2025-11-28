@@ -1,0 +1,67 @@
+//coloca todos los archivos que tengo que no se deberían de subir
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime files
+*.d.ts
+*.tsbuildinfo
+
+# Build outputs
+dist/
+build/
+out/
+.next/ # Next.js
+.nuxt/ # Nuxt.js
+.svelte-kit/ # SvelteKit
+.vite/ # Vite
+coverage/
+tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+.c9/
+
+# Dependency directories
+vendor/
+venv/
+env/
+
+# Miscellaneous
+*.swp
+*.bak
+*.swo
+*~
