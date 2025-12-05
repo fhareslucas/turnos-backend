@@ -1,5 +1,5 @@
 import { DataTypes, Model } from "sequelize";
-import  {sequelize}  from "../../config/database.js";
+import { sequelize } from "../../config/database.js";
 
 class Turno extends Model {}
 
@@ -13,7 +13,6 @@ Turno.init(
     codigo: {
       type: DataTypes.STRING(20),
       allowNull: false,
-      unique: true,
     },
     tipo_servicio_id: {
       type: DataTypes.UUID,
