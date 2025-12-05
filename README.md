@@ -26,7 +26,7 @@ Esta API permite gestionar un sistema de turnos, incluyendo usuarios, mesas, tip
 {
   "success": false,
   "message": "Descripción del error",
-  "errors": [ ... ] 
+  "errors": [ ... ]
 }
 ```
 
@@ -43,10 +43,10 @@ Crea un nuevo usuario en el sistema.
 - **Body**:
   ```json
   {
-    "nombre": "Juan Perez", 
-    "email": "juan@test.com", 
-    "password": "password123", 
-    "rol": "operador" 
+    "nombre": "Juan Perez",
+    "email": "juan@test.com",
+    "password": "password123",
+    "rol": "operador"
   }
   ```
 
@@ -59,8 +59,8 @@ Inicia sesión y obtiene un token JWT.
 - **Body**:
   ```json
   {
-    "email": "juan@test.com", 
-    "password": "password123" 
+    "email": "juan@test.com",
+    "password": "password123"
   }
   ```
 - **Respuesta**:
@@ -93,10 +93,10 @@ Genera un nuevo turno para un cliente.
 - **Body**:
   ```json
   {
-    "tipo_servicio_id": "uuid", 
-    "nombre_cliente": "Maria", 
-    "prioridad": 0, 
-    "observaciones": "Nota..." 
+    "tipo_servicio_id": "uuid",
+    "nombre_cliente": "Maria",
+    "prioridad": 0,
+    "observaciones": "Nota..."
   }
   ```
 
@@ -134,7 +134,7 @@ Asigna un turno a una mesa y cambia su estado a `en_atencion`.
 - **Body**:
   ```json
   {
-    "mesa_id": "uuid" 
+    "mesa_id": "uuid"
   }
   ```
 
@@ -147,7 +147,7 @@ Finaliza la atención de un turno.
 - **Body**:
   ```json
   {
-    "observaciones": "Cliente satisfecho"   
+    "observaciones": "Cliente satisfecho"
   }
   ```
 
@@ -160,7 +160,7 @@ Cancela un turno.
 - **Body**:
   ```json
   {
-    "observaciones": "Cliente no se presentó" 
+    "observaciones": "Cliente no se presentó"
   }
   ```
 
@@ -184,10 +184,10 @@ Cancela un turno.
 - **Body**:
   ```json
   {
-    "numero": 1, 
-    "nombre": "Mesa 1", 
-    "estado": "disponible", 
-    "activo": true 
+    "numero": 1,
+    "nombre": "Mesa 1",
+    "estado": "disponible",
+    "activo": true
   }
   ```
 
@@ -223,12 +223,12 @@ Realiza un borrado lógico (desactiva la mesa).
 - **Body**:
   ```json
   {
-    "nombre": "Caja", 
-    "codigo": "CAJA", 
-    "descripcion": "Pagos...", 
-    "color": "#54243C", 
-    "tiempo_estimado": 15, 
-    "activo": true 
+    "nombre": "Caja",
+    "codigo": "CAJA",
+    "descripcion": "Pagos...",
+    "color": "#54243C",
+    "tiempo_estimado": 15,
+    "activo": true
   }
   ```
 
