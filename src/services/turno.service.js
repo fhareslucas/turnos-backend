@@ -28,7 +28,7 @@ class TurnoService {
       observaciones,
       estado: "en_espera",
     });
-
+j
     return await this.findById(turno.id);
   }
 
